@@ -1,0 +1,24 @@
+﻿<Window x:Class="LogFilter.ViewModel.CreatePattern"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LogFilter.ViewModel"
+        mc:Ignorable="d"
+        Title="CreatePattern" Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="0.9*"/>
+            <RowDefinition Height ="0.1*"/>
+        </Grid.RowDefinitions>
+        <RichTextBox Name="NewPatternRTB"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width ="0.67*"/>
+                <ColumnDefinition Width="0.33*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Name="EnteredFileName">Enter file name</TextBox>
+            <Button Grid.Column="1" Content="Add" Click="Add_Button_Click"/>
+        </Grid>
+    </Grid>
+</Window>
